@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextPerestrelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="Matheus Perestrelo - 93260" />
+
+    <EditText
+        android:id="@+id/editTextToledo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="Gabriel Toledo - 93152" />
+
+    <EditText
+        android:id="@+id/editTextJosé"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="José Victor - 95633" />
+
+</LinearLayout>
+
+
