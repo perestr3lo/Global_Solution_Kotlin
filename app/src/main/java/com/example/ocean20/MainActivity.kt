@@ -5,6 +5,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.activity.ComponentActivity
 import androidx.activity.viewModels
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ocean20.adapter.BeachAdapter
 
@@ -38,9 +39,14 @@ class MainActivity : ComponentActivity() {
                 return@setOnClickListener
             }
 
+
             viewModel.addItem(beachName, cityName, stateName)
 
             editPraia.text.clear()
+            editCidade.text.clear()
+            editEstado.text.clear()
+
+            recyclerView.layoutManager = LinearLayoutManager(this)
         }
 
         viewModel.itemsLiveData.observe(this) { items ->

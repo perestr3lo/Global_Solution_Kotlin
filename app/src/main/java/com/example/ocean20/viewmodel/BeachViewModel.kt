@@ -10,7 +10,7 @@ class BeachViewModel : ViewModel() {
     val itemsLiveData = MutableLiveData<List<BeachModel>>()
 
     fun addItem(name: String, city: String, state: String) {
-        val item = BeachModel(id = 0, name = name, city = city, state = state, onRemove = ::removeItem)
+        val item = BeachModel(id = 0, nameBeach = name, nameCity = city, nameState = state, onRemove = ::removeItem)
         items.add(item)
         itemsLiveData.value = items
     }
